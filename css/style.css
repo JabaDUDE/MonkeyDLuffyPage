@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.history{
+    color:black;
+    text-shadow: .2em;
+}
+div{
+    text-align: center;
+}
+
+.monkey {
+    border-radius: 100%;
+
+}
