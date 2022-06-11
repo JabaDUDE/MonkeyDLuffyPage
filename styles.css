@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+.monkey {
+  height: 300px;
+  width: 300px;
+}
+
+body {
+  background-color: #c8472c;
+}
+.hidden {
+  display: none;
+}
+.container {
+  background-color: #f8de3c;
+  display: flex;
+  justify-content: space-around;
+}
+.container :hover {
+  color: blue;
+  cursor: pointer;
+}
