@@ -6,9 +6,10 @@ document.getElementById("sanji").addEventListener("click", pickSanji);
 document.getElementById("chopper").addEventListener("click", pickChopper);
 document.getElementById("robin").addEventListener("click", pickRobin);
 document.getElementById("franky").addEventListener("click", pickFranky);
+document.getElementById("brook").addEventListener("click", pickBrook);
 document.getElementById("jimbei").addEventListener("click", pickJimbei);
 const luffy = {
-  name: "Luffy",
+  name: "Monkey D. Luffy",
   position: "Captain",
   age: 19,
   bounty: `1.5B`,
@@ -18,7 +19,7 @@ const luffy = {
     risk his life to become King of the Pirates and protect his crew.`,
 };
 const zoro = {
-  name: "Zoro",
+  name: "Roronoa Zoro",
   positon: "First Mate",
   age: 21,
   bounty: `320M`,
@@ -46,14 +47,14 @@ const sanji = {
   description: `Sanji is a slim, muscular, long-legged man with blond hair which he keeps brushed over one side of his face. Before the timeskip, this was the left side. After the two year timeskip, he switched his hairstyle so that it covers the right side.`,
 };
 const chopper = {
-  name: "Chopper",
+  name: "Tony Tony Chopper",
   positon: "Ship Doctor",
   age: 17,
   bounty: `100`,
   description: `Chopper is a reindeer that ate the Hito Hito no Mi, a Devil Fruit that allows its user to transform into a human hybrid or a human at will. He came from Drum Island and was taught how to be a doctor by his two parental figures, Doctors Hiriluk and Kureha.`,
 };
 const robin = {
-  name: "Robin",
+  name: "Nico Robin",
   positon: "Archeologist",
   age: 30,
   bounty: `130M`,
@@ -66,115 +67,208 @@ const franky = {
   bounty: `94M`,
   description: `As a direct result of the modifications that he conducted upon himself as well as the years spent as a ship dismantler, bounty hunter, and street thug in Water 7, Franky is a powerfully built man with a height of at least seven feet, making him the third-tallest member of the Straw Hat crew, after Jimbe and Brook.`,
 };
+const brook = {
+  name: "Brook",
+  position: "Musician",
+  age: 90,
+  bounty: "83M",
+  description:
+    "Brook aka Dead Bones later Soul King is the musician of the Straw Hat Pirates and one of the main characters of One Piece. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle. He is a Devil Fruit user who ate the Yomi Yomi no Mi, and is undead, having been brought back into a pseudo-immortal state because of its powers.",
+};
 const jimbei = {
   name: "Jimbei",
   positon: "Helmsman",
   age: 46,
   bounty: `400M`,
-  description: `Jinbe is a large blue whale shark fish-man and the current tallest member of the Straw Hat Pirates. He has a stocky build similar to that of a sumo wrestler and a face that is commonly associated with various Japanese demons such as the oni.`,
+  description: `Jimbe is a large blue whale shark fish-man and the current tallest member of the Straw Hat Pirates. He has a stocky build similar to that of a sumo wrestler and a face that is commonly associated with various Japanese demons such as the oni.`,
 };
 function pickLuffy() {
   const luffyValues = Object.values(luffy);
 
-  document.querySelector(".name").innerHTML = `Name: ${luffyValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${luffyValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${luffyValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${luffyValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${luffyValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${luffyValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${luffyValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${luffyValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${luffyValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${luffyValues[4]}`;
 }
 function pickZoro() {
   const zoroValues = Object.values(zoro);
 
-  document.querySelector(".name").innerHTML = `Name: ${zoroValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${zoroValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${zoroValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${zoroValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong>${zoroValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${zoroValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${zoroValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${zoroValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${zoroValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${zoroValues[4]}`;
 }
 function pickNami() {
   const namiValues = Object.values(nami);
 
-  document.querySelector(".name").innerHTML = `Name: ${namiValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${namiValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${namiValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${namiValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${namiValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${namiValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${namiValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${namiValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${namiValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${namiValues[4]}`;
 }
 function pickUsopp() {
   const usoppValues = Object.values(usopp);
 
-  document.querySelector(".name").innerHTML = `Name: ${usoppValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${usoppValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${usoppValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${usoppValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${usoppValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${usoppValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${usoppValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${usoppValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${usoppValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${usoppValues[4]}`;
 }
 function pickFranky() {
   const frankyValues = Object.values(franky);
 
-  document.querySelector(".name").innerHTML = `Name: ${frankyValues[0]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${frankyValues[0]}`;
   document.querySelector(
     ".position"
-  ).innerHTML = `Position: ${frankyValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${frankyValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${frankyValues[3]}`;
+  ).innerHTML = `<strong>Position:</strong> ${frankyValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${frankyValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${frankyValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${frankyValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${frankyValues[4]}`;
 }
 function pickJimbei() {
   const jimbeiValues = Object.values(jimbei);
 
-  document.querySelector(".name").innerHTML = `Name: ${jimbeiValues[0]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${jimbeiValues[0]}`;
   document.querySelector(
     ".position"
-  ).innerHTML = `Position: ${jimbeiValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${jimbeiValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${jimbeiValues[3]}`;
+  ).innerHTML = `<strong>Position:</strong> ${jimbeiValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${jimbeiValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${jimbeiValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${jimbeiValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${jimbeiValues[4]}`;
 }
 function pickChopper() {
   const chopperValues = Object.values(chopper);
 
-  document.querySelector(".name").innerHTML = `Name: ${chopperValues[0]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${chopperValues[0]}`;
   document.querySelector(
     ".position"
-  ).innerHTML = `Position: ${chopperValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${chopperValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${chopperValues[3]}`;
+  ).innerHTML = `<strong>Position:</strong> ${chopperValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${chopperValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${chopperValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${chopperValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${chopperValues[4]}`;
 }
 function pickSanji() {
   const sanjiValues = Object.values(sanji);
 
-  document.querySelector(".name").innerHTML = `Name: ${sanjiValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${sanjiValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${sanjiValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${sanjiValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${sanjiValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${sanjiValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${sanjiValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${sanjiValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${sanjiValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${sanjiValues[4]}`;
 }
 function pickRobin() {
   const robinValues = Object.values(robin);
 
-  document.querySelector(".name").innerHTML = `Name: ${robinValues[0]}`;
-  document.querySelector(".position").innerHTML = `Position: ${robinValues[1]}`;
-  document.querySelector(".age").innerHTML = `Age: ${robinValues[2]}`;
-  document.querySelector(".bounty").innerHTML = `Bounty: ${robinValues[3]}`;
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${robinValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${robinValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${robinValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${robinValues[3]}`;
   document.querySelector(
     ".description"
-  ).innerHTML = `Description: ${robinValues[4]}`;
+  ).innerHTML = `<strong>Description:</strong> ${robinValues[4]}`;
+}
+function pickBrook() {
+  const brookValues = Object.values(brook);
+
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${brookValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${brookValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${brookValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${brookValues[3]}`;
+  document.querySelector(
+    ".description"
+  ).innerHTML = `<strong>Description:</strong> ${brookValues[4]}`;
 }
