@@ -34,5 +34,13 @@ body {
 .biography {
   background-color: white;
   height: 500px;
+  padding-top: 10px;
   margin: 3% 10%;
+  border-radius: 30px;
+}
+
+img {
+  margin-top: 25px;
+  height: 350px;
+  width: auto;
 }

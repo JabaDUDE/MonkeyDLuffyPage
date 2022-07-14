@@ -82,6 +82,7 @@ const jimbei = {
   bounty: `400M`,
   description: `Jimbe is a large blue whale shark fish-man and the current tallest member of the Straw Hat Pirates. He has a stocky build similar to that of a sumo wrestler and a face that is commonly associated with various Japanese demons such as the oni.`,
 };
+//TODO: Add images for every character with document.querySelector(".image").innerHTML = `<img src= 'images/luffy.png'/>`;
 function pickLuffy() {
   const luffyValues = Object.values(luffy);
 
@@ -100,6 +101,7 @@ function pickLuffy() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${luffyValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/luffy.png'/>`;
 }
 function pickZoro() {
   const zoroValues = Object.values(zoro);
@@ -119,6 +121,7 @@ function pickZoro() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${zoroValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/zoro.jpg'/>`;
 }
 function pickNami() {
   const namiValues = Object.values(nami);
@@ -138,82 +141,7 @@ function pickNami() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${namiValues[4]}`;
-}
-function pickUsopp() {
-  const usoppValues = Object.values(usopp);
-
-  document.querySelector(
-    ".name"
-  ).innerHTML = `<strong>Name:</strong> ${usoppValues[0]}`;
-  document.querySelector(
-    ".position"
-  ).innerHTML = `<strong>Position:</strong> ${usoppValues[1]}`;
-  document.querySelector(
-    ".age"
-  ).innerHTML = `<strong>Age:</strong> ${usoppValues[2]}`;
-  document.querySelector(
-    ".bounty"
-  ).innerHTML = `<strong>Bounty:</strong> ${usoppValues[3]}`;
-  document.querySelector(
-    ".description"
-  ).innerHTML = `<strong>Description:</strong> ${usoppValues[4]}`;
-}
-function pickFranky() {
-  const frankyValues = Object.values(franky);
-
-  document.querySelector(
-    ".name"
-  ).innerHTML = `<strong>Name:</strong> ${frankyValues[0]}`;
-  document.querySelector(
-    ".position"
-  ).innerHTML = `<strong>Position:</strong> ${frankyValues[1]}`;
-  document.querySelector(
-    ".age"
-  ).innerHTML = `<strong>Age:</strong> ${frankyValues[2]}`;
-  document.querySelector(
-    ".bounty"
-  ).innerHTML = `<strong>Bounty:</strong> ${frankyValues[3]}`;
-  document.querySelector(
-    ".description"
-  ).innerHTML = `<strong>Description:</strong> ${frankyValues[4]}`;
-}
-function pickJimbei() {
-  const jimbeiValues = Object.values(jimbei);
-
-  document.querySelector(
-    ".name"
-  ).innerHTML = `<strong>Name:</strong> ${jimbeiValues[0]}`;
-  document.querySelector(
-    ".position"
-  ).innerHTML = `<strong>Position:</strong> ${jimbeiValues[1]}`;
-  document.querySelector(
-    ".age"
-  ).innerHTML = `<strong>Age:</strong> ${jimbeiValues[2]}`;
-  document.querySelector(
-    ".bounty"
-  ).innerHTML = `<strong>Bounty:</strong> ${jimbeiValues[3]}`;
-  document.querySelector(
-    ".description"
-  ).innerHTML = `<strong>Description:</strong> ${jimbeiValues[4]}`;
-}
-function pickChopper() {
-  const chopperValues = Object.values(chopper);
-
-  document.querySelector(
-    ".name"
-  ).innerHTML = `<strong>Name:</strong> ${chopperValues[0]}`;
-  document.querySelector(
-    ".position"
-  ).innerHTML = `<strong>Position:</strong> ${chopperValues[1]}`;
-  document.querySelector(
-    ".age"
-  ).innerHTML = `<strong>Age:</strong> ${chopperValues[2]}`;
-  document.querySelector(
-    ".bounty"
-  ).innerHTML = `<strong>Bounty:</strong> ${chopperValues[3]}`;
-  document.querySelector(
-    ".description"
-  ).innerHTML = `<strong>Description:</strong> ${chopperValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/nami.jpg'/>`;
 }
 function pickSanji() {
   const sanjiValues = Object.values(sanji);
@@ -233,7 +161,94 @@ function pickSanji() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${sanjiValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/sanji.jpg'/>`;
 }
+function pickUsopp() {
+  const usoppValues = Object.values(usopp);
+
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${usoppValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${usoppValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${usoppValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${usoppValues[3]}`;
+  document.querySelector(
+    ".description"
+  ).innerHTML = `<strong>Description:</strong> ${usoppValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/usopp.jpg'/>`;
+}
+
+function pickFranky() {
+  const frankyValues = Object.values(franky);
+
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${frankyValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${frankyValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${frankyValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${frankyValues[3]}`;
+  document.querySelector(
+    ".description"
+  ).innerHTML = `<strong>Description:</strong> ${frankyValues[4]}`;
+  document.querySelector(
+    ".image"
+  ).innerHTML = `<img src= 'images/franky.jpg'/>`;
+}
+function pickJimbei() {
+  const jimbeiValues = Object.values(jimbei);
+
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${jimbeiValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${jimbeiValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${jimbeiValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${jimbeiValues[3]}`;
+  document.querySelector(
+    ".description"
+  ).innerHTML = `<strong>Description:</strong> ${jimbeiValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/jimbe.jpg'/>`;
+}
+function pickChopper() {
+  const chopperValues = Object.values(chopper);
+
+  document.querySelector(
+    ".name"
+  ).innerHTML = `<strong>Name:</strong> ${chopperValues[0]}`;
+  document.querySelector(
+    ".position"
+  ).innerHTML = `<strong>Position:</strong> ${chopperValues[1]}`;
+  document.querySelector(
+    ".age"
+  ).innerHTML = `<strong>Age:</strong> ${chopperValues[2]}`;
+  document.querySelector(
+    ".bounty"
+  ).innerHTML = `<strong>Bounty:</strong> ${chopperValues[3]}`;
+  document.querySelector(
+    ".description"
+  ).innerHTML = `<strong>Description:</strong> ${chopperValues[4]}`;
+  document.querySelector(
+    ".image"
+  ).innerHTML = `<img src= 'images/chopper.png'/>`;
+}
+
 function pickRobin() {
   const robinValues = Object.values(robin);
 
@@ -252,6 +267,7 @@ function pickRobin() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${robinValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/robin.jpg'/>`;
 }
 function pickBrook() {
   const brookValues = Object.values(brook);
@@ -271,4 +287,5 @@ function pickBrook() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${brookValues[4]}`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/brook.jpg'/>`;
 }
