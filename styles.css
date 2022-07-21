@@ -10,11 +10,6 @@ div {
   text-align: center;
 }
 
-.monkey {
-  height: 300px;
-  width: 300px;
-}
-
 body {
   background-color: #c8472c !important;
 }
@@ -42,7 +37,7 @@ body {
 
 img {
   margin-top: 25px;
-  height: 350px;
+
   width: auto;
 }
 /* xs */
@@ -54,17 +49,20 @@ img {
 @media (min-width: 768px) {
   img {
     width: 150px;
+    height: 225px;
   }
 }
 /* md */
 @media (min-width: 992px) {
   img {
     width: 200px;
+    height: 275px;
   }
 }
 /* lg */
 @media (min-width: 1200px) {
   img {
     width: 250px;
+    height: 325px;
   }
 }

@@ -103,7 +103,7 @@ function pickLuffy() {
   ).innerHTML = `<strong>Description:</strong> ${luffyValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/luffy.png' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/luffy.png' />`;
 }
 function pickZoro() {
   const zoroValues = Object.values(zoro);
@@ -123,9 +123,7 @@ function pickZoro() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${zoroValues[4]}`;
-  document.querySelector(
-    ".image"
-  ).innerHTML = `<img src= 'images/zoro.jpg' class="img-fluid"/>`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/zoro.jpg' />`;
 }
 function pickNami() {
   const namiValues = Object.values(nami);
@@ -145,9 +143,7 @@ function pickNami() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${namiValues[4]}`;
-  document.querySelector(
-    ".image"
-  ).innerHTML = `<img src= 'images/nami.jpg' class="img-fluid"/>`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/nami.jpg' />`;
 }
 function pickSanji() {
   const sanjiValues = Object.values(sanji);
@@ -169,7 +165,7 @@ function pickSanji() {
   ).innerHTML = `<strong>Description:</strong> ${sanjiValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/sanji.jpg' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/sanji.jpg' />`;
 }
 function pickUsopp() {
   const usoppValues = Object.values(usopp);
@@ -191,7 +187,7 @@ function pickUsopp() {
   ).innerHTML = `<strong>Description:</strong> ${usoppValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/usopp.jpg' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/usopp.jpg' />`;
 }
 
 function pickFranky() {
@@ -214,7 +210,7 @@ function pickFranky() {
   ).innerHTML = `<strong>Description:</strong> ${frankyValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/franky.jpg' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/franky.jpg' />`;
 }
 function pickJimbei() {
   const jimbeiValues = Object.values(jimbei);
@@ -236,7 +232,7 @@ function pickJimbei() {
   ).innerHTML = `<strong>Description:</strong> ${jimbeiValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/jimbe.jpg' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/jimbe.jpg' />`;
 }
 function pickChopper() {
   const chopperValues = Object.values(chopper);
@@ -258,7 +254,7 @@ function pickChopper() {
   ).innerHTML = `<strong>Description:</strong> ${chopperValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/chopper.png' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/chopper.png' />`;
 }
 
 function pickRobin() {
@@ -279,9 +275,7 @@ function pickRobin() {
   document.querySelector(
     ".description"
   ).innerHTML = `<strong>Description:</strong> ${robinValues[4]}`;
-  document.querySelector(
-    ".image"
-  ).innerHTML = `<img src= 'images/robin.jpg' class="img-fluid"/>`;
+  document.querySelector(".image").innerHTML = `<img src= 'images/robin.jpg'/>`;
 }
 function pickBrook() {
   const brookValues = Object.values(brook);
@@ -303,5 +297,5 @@ function pickBrook() {
   ).innerHTML = `<strong>Description:</strong> ${brookValues[4]}`;
   document.querySelector(
     ".image"
-  ).innerHTML = `<img src= 'images/brook.jpg' class="img-fluid"/>`;
+  ).innerHTML = `<img src= 'images/brook.jpg' />`;
 }
