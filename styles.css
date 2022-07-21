@@ -37,13 +37,11 @@ body {
 
 img {
   margin-top: 25px;
-
-  width: auto;
 }
 /* xs */
 img {
   width: 100px;
-  height: auto;
+  height: 175px;
 }
 /* sm */
 @media (min-width: 768px) {
